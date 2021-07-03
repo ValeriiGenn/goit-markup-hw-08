@@ -12,10 +12,13 @@
     border-radius: 4px;}
 
     &__list {
-    display: flex;
+   /* display: flex;*/
+   margin-bottom: -30px;
     }
     &__item {
     display: list-item;
+    width: 100%;
+    margin-bottom: 30px;
    flex-basis: calc((100% - 90px) / 4);
     &:not(:last-child) {
     margin-right: 30px;}}
@@ -26,7 +29,7 @@
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
-    text-align: left;}
+    text-align: /*left*/center;}
     &__text {
     color: var(--gray-color);
     font-size: 14px;
