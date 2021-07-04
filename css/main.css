@@ -286,10 +286,15 @@ body {
 }
 
 .benefits {
-  /*padding-top: 94px;
-    padding-bottom: 47px;*/
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
 }
 
 .benefits__thumb {
@@ -299,7 +304,7 @@ body {
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
-  /*padding: 25px 100px;*/
+  padding: 25px 100px;
   border-radius: 4px;
 }
 
