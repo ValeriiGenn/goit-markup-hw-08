@@ -1,5 +1,5 @@
-.site-nav {
-    display: flex;
+.site-nav {display: none;}
+    /*display: flex;
     &__link {
     display: flex;
     text-decoration: none;
@@ -16,5 +16,35 @@
 .site-nav .current {
     position: relative;
     color: var(--accent-color);
+}*/
+.mobile-nav{
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    .container{position: relative;}
+    .menu-close{position: absolute;
+    right: 25px;
+     top: 21px;}
 }
-
+.mobile-menu__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height:1.175;
+    letter-spacing: 0.02em;
+}
+.mobile-contacs__link {
+       font-size: 24px;
+        font-weight: 500;
+    line-height: 1.166;
+    letter-spacing: 0.02em;
+    
+}
+.mobile-media__link {
+    font-style: Medium; 
+    font-size: 18px;
+     line-height: 1.222; 
+     line-height: 104%;
+}
+.mobile-media{display: flex;}
