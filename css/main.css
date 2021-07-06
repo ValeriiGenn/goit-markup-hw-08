@@ -173,6 +173,117 @@ body {
   bottom: -32px;
 }
 
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100wh;
+  z-index: 1;
+  background-color: var(--white-color);
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+    fill: currentColor;
+  }
+}
+
+.mobile-menu__container {
+  position: relative;
+  padding: 48px 40px;
+  height: 100vh;
+}
+
+.mobile-menu__button--close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu__button {
+    display: none;
+    fill: currentColor;
+  }
+}
+
+.mobile-menu__wraper {
+  position: absolute;
+  bottom: 48px;
+  right: 40px;
+  left: 40px;
+}
+
+.mobile-menu-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu-nav__link {
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--black-color);
+}
+
+.mobile-menu-contact__list {
+  margin-bottom: 30px;
+}
+
+.mobile-menu-contact__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.mobile-menu-contact__link--blue {
+  color: var(--accent-color);
+  font-size: 24px;
+  line-height: 1.176;
+}
+
+@media screen and (min-width: 380px) {
+  .mobile-menu-contact__link--blue {
+    font-size: 34px;
+  }
+}
+
+.mobile-menu-contact__link {
+  font-size: 15px;
+  line-height: 1.167;
+  color: var(--gray-color);
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--black-color);
+}
+
+@media screen and (min-width: 380px) {
+  .mobile-menu-contact__link {
+    font-style: 24px;
+  }
+}
+
+.mobile-menu-social__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mobile-menu-social__item {
+  margin-top: 10px;
+}
+
+.mobile-menu-social__item:not(:last-child) {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid var(--brdrinput-color);
+}
+
+.mobile-menu-social__link {
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--black-color);
+}
+
 .site-nav {
   display: none;
 }
@@ -249,6 +360,21 @@ body {
     letter-spacing: 0.02em;
     color: #757575;
 }*/
+.mobile-menu__button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu__button {
+    display: none;
+  }
+}
+
 .auth-nav {
   display: none;
 }

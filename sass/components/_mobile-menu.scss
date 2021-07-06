@@ -1,0 +1,29 @@
+.mobile-menu{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100wh;
+    z-index: 1;
+    background-color: var(--white-color);
+    @media screen and (min-width: 768px) {
+        display: none;
+        fill: currentColor;}
+    &__container{
+            position: relative;
+            padding: 48px 40px;
+            height: 100vh;}
+    &__button--close{
+        position: absolute;
+        right: 15px;
+        top: 10px;}
+    &__button {
+        @media screen and (min-width: 768px) {
+            display: none;
+            fill: currentColor;}}
+    &__wraper{
+        position: absolute;
+        bottom: 48px;
+        right: 40px;
+        left: 40px;
+    }
+}

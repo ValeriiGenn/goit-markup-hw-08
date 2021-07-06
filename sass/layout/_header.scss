@@ -71,3 +71,14 @@
     letter-spacing: 0.02em;
     color: #757575;
 }*/
+.mobile-menu__button{
+    @media screen and (min-width: 768px) {
+        display: none;}
+        display: inline-flex;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+}
