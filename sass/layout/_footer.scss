@@ -1,16 +1,33 @@
 .page-footer {
     background-color: var(--footer-color);
     color: var(--white-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
-    max-width: 1200px;
+    /*padding-top: 60px;
+    padding-bottom: 60px;*/
+    /*max-width: 1200px;*/
     margin: 0 auto;
     align-content: center;
     &__container {
-    display: flex;
+        margin: 0 auto;
+        padding: 60px 15px;
+        @media screen and (min-width: 480px) {
+        width: 480px; }
+   /* display: flex;
     align-items: baseline;
-    padding-left: 15px;
-    padding-right: 15px;}}
+        padding-left: 15px;
+    padding-right: 15px;*/}
+    &__wraper-tablet{margin-bottom: 60px;
+    text-align: center;}
+    &__wraper-address{text-align: center; }
+    &__logo {margin-bottom: 20px;
+        display: inline-block;
+        color: var(--accent-first-color);
+        
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.166;
+        text-decoration: none;
+        }
+}
 .address-list {
     list-style: none;
     margin-top: 9px;
@@ -25,7 +42,8 @@
      &:focus {
     color: var(--accent-color);}}}
 .address {
-    margin-top: 20px;
+    /*margin-top: 20px;*/
+        margin-bottom: 60px;
     color: var(--white-color);
     text-decoration: none;
     font-style: normal;
@@ -34,11 +52,16 @@
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
-    text-align: left;}}
-.logo__second {
-    color: var(--white-color);
-    text-decoration: none;
-    font-style: normal;}
+    /*text-align: left;*/}
+    
+}
+.page-footer-logo{
+        text-decoration: none;
+    font-style: normal;
+    
+    &__second {color: var(--white-color);}
+    &__first{color: var(--accent-color);
+  }}
 
 /*іконки соцмереж*/
 .footer-network {
@@ -67,9 +90,9 @@
     fill: currentColor;}}
     
 .footer-social-networks {
-    margin: 0;
+    margin: 0 auto;
     width: 206px;
-    margin-left: 70px;
+    /*margin-left: 70px;*/
 &__join {
     margin-bottom: 20px;
     align-content: center;
@@ -81,14 +104,15 @@
     text-transform: uppercase;}}
 
 .footer-subscription {
-    margin-left: 93px;
+    align-content: center;
+    /*margin-left: 93px;*/
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--footer-color);
-&__text {
+&__text {text-align: center;
     align-content: center;
     font-weight: bold;
     font-size: 14px;
@@ -97,13 +121,20 @@
     text-transform: uppercase;
     color: var(--white-color);}
 &__form {
-    display: flex;
+    text-align: center;
+margin-left: auto;
+margin-right: auto;
+    /*display: flex;*/
     width: 570px;
     height: 86px;}
 &__btn {
-    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 20px;
-    width: 200px;
+        position: relative;
+        width: 200px;
     height: 50px;
     padding-right: 62px;
     padding-left: 29px;

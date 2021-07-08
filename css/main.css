@@ -1063,18 +1063,45 @@ body {
 .page-footer {
   background-color: var(--footer-color);
   color: var(--white-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
-  max-width: 1200px;
+  /*padding-top: 60px;
+    padding-bottom: 60px;*/
+  /*max-width: 1200px;*/
   margin: 0 auto;
   align-content: center;
 }
 
 .page-footer__container {
-  display: flex;
-  align-items: baseline;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 0 auto;
+  padding: 60px 15px;
+  /* display: flex;
+    align-items: baseline;
+        padding-left: 15px;
+    padding-right: 15px;*/
+}
+
+@media screen and (min-width: 480px) {
+  .page-footer__container {
+    width: 480px;
+  }
+}
+
+.page-footer__wraper-tablet {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.page-footer__wraper-address {
+  text-align: center;
+}
+
+.page-footer__logo {
+  margin-bottom: 20px;
+  display: inline-block;
+  color: var(--accent-first-color);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.166;
+  text-decoration: none;
 }
 
 .address-list {
@@ -1098,7 +1125,8 @@ body {
 }
 
 .address {
-  margin-top: 20px;
+  /*margin-top: 20px;*/
+  margin-bottom: 60px;
   color: var(--white-color);
   text-decoration: none;
   font-style: normal;
@@ -1109,13 +1137,20 @@ body {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  text-align: left;
+  /*text-align: left;*/
 }
 
-.logo__second {
-  color: var(--white-color);
+.page-footer-logo {
   text-decoration: none;
   font-style: normal;
+}
+
+.page-footer-logo__second {
+  color: var(--white-color);
+}
+
+.page-footer-logo__first {
+  color: var(--accent-color);
 }
 
 /*іконки соцмереж*/
@@ -1154,9 +1189,9 @@ body {
 }
 
 .footer-social-networks {
-  margin: 0;
+  margin: 0 auto;
   width: 206px;
-  margin-left: 70px;
+  /*margin-left: 70px;*/
 }
 
 .footer-social-networks__join {
@@ -1171,7 +1206,8 @@ body {
 }
 
 .footer-subscription {
-  margin-left: 93px;
+  align-content: center;
+  /*margin-left: 93px;*/
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1181,6 +1217,7 @@ body {
 }
 
 .footer-subscription__text {
+  text-align: center;
   align-content: center;
   font-weight: bold;
   font-size: 14px;
@@ -1191,14 +1228,21 @@ body {
 }
 
 .footer-subscription__form {
-  display: flex;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  /*display: flex;*/
   width: 570px;
   height: 86px;
 }
 
 .footer-subscription__btn {
-  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 20px;
+  position: relative;
   width: 200px;
   height: 50px;
   padding-right: 62px;
