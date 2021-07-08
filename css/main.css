@@ -95,7 +95,7 @@ body {
 }
 
 .page-header__container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
   display: flex;
@@ -406,22 +406,37 @@ body {
 }
 }*/
 .hero {
-  max-width: 1600px;
+  max-width: 100%;
   margin: 0 auto;
   display: block;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  height: 400px;
   background-color: var(--hero-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1200px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
   margin-bottom: 30px;
   color: var(--white-color);
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.4;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+  }
 }
 
 .hero__button {
@@ -444,14 +459,45 @@ body {
 }
 
 .hero--overlay {
-  max-width: 1600px;
-  height: 600px;
+  max-width: 100%;
+  padding-top: 118px;
+  height: 400px;
   margin: 0 auto;
-  background: var(--hero-color);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img.bgoptm.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Heroimg1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background: cover;
+}
+
+@media not all, screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero--overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Imgbg2x.jpg);
+  }
+}
+
+@media not all, screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero--overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Herotabimg2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero--overlay {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img.bgoptm.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero--overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Herotabimg1x.jpg");
+    background-size: 768px 400px;
+  }
+}
+
+@media not all, (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero--overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/heroimg2x.jpg);
+  }
 }
 
 .benefits {
