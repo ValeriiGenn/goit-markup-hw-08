@@ -34,7 +34,8 @@
         @media screen and(min-width: 768px){
            display: flex;}
             @media screen and (min-width: 1200px){text-align: left;
-            align-items: baseline;}
+            align-items: baseline;
+        margin-bottom: 0;}
        }
       
       
@@ -71,6 +72,7 @@
     color: var(--white-color);
     text-decoration: none;
     font-style: normal;
+    @media screen and (min-width: 1200px){margin-bottom: 0;}
     &__text {
     font-family: Roboto;
     font-size: 14px;
@@ -79,8 +81,7 @@
    
     @media screen and (min-width: 1200px){
         margin-top: 20px;
-        text-align: left;
-    }
+        text-align: left;}
     }
     
 }
