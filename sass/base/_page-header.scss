@@ -1,16 +1,33 @@
 .page-header {
-    
+     
+border-bottom: 1px solid #ececec;
    
     &__container {
-        width: /*1200px*/100%;
+        width: 100%;
         margin: 0 auto;
         padding: 0 15px;
     display: flex;
     align-items: center;
-    justify-content: center;padding-top: 24px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #ececec;
-    margin-left: auto;
+    justify-content: center;
+    
+    
+       @media screen and (min-width: 1200px) {
+             width: 1200px;
+             padding-top: 24px;
+    
+             padding-bottom: 25px;
+         }
+        @media screen and (min-width: 768px) {
+            width: 768px;
+        }
+        @media screen and (min-width: 480px) {
+            width: 480px;
+        }
+        }
 }
+.mobile-menu{
+    &__button{
+        @media screen and (min-width: 768px) {
+            display: none;
+    }
 }
-
