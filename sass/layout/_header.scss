@@ -1,5 +1,8 @@
-.site-nav {display: none;}
-    /*display: flex;
+.page-header{
+    @media screen and (min-width: 1200px){width: 1200px;}
+}
+.site-nav {/*display: none;*/
+    display: flex;
     &__link {
     display: flex;
     text-decoration: none;
@@ -16,7 +19,7 @@
 .site-nav .current {
     position: relative;
     color: var(--accent-color);
-}*/
+}
     /*.mobile-nav{
     position: absolute;
     background-color: #fff;
@@ -70,7 +73,7 @@
     line-height: 1.166;
     letter-spacing: 0.02em;
     color: #757575;
-}*/
+}
 .mobile-menu__button{
     @media screen and (min-width: 768px) {
         display: none;}
@@ -81,4 +84,4 @@
         background-color: transparent;
         cursor: pointer;
 
-}
+}*/
