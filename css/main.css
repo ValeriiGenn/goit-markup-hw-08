@@ -1303,7 +1303,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .footer-subscription {
+  .footer-subscription__text {
     text-align: left;
   }
 }
@@ -1317,7 +1317,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .footer-subscription {
+  .footer-subscription__form {
     display: flex;
     width: 570px;
   }
@@ -1332,9 +1332,8 @@ body {
   position: relative;
   width: 200px;
   height: 50px;
-  padding: 10px 32px;
-  /*padding-right: 62px;
-    padding-left: 29px;*/
+  padding-right: 62px;
+  padding-left: 29px;
   border: 0px solid transparent;
   background: var(--logo-color);
   box-shadow: 0px 4px 4px black;
@@ -1388,8 +1387,6 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-subscription__email {
     width: 358px;
-    margin-top: 20px;
-    margin-right: 12px;
   }
 }
 
