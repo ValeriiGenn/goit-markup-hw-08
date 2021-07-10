@@ -65,6 +65,82 @@
           </li>
         </ul>
       </div>
+      <div class="mobail-menu is-hidden">
+        <div class="mobail-menu__container">
+          <button
+            class="mobail-menu__button mobail-menu__button--close menu-close"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="nav__icon-close"
+                href="./images/symbol-defs.svg#icon-close_40pxopt"
+              ></use>
+            </svg>
+          </button>
+          <nav class="mobail-menu__nav">
+            <ul class="mobail-menu-nav__list list">
+              <li class="mobail-menu-nav__item">
+                <a
+                  class="mobail-menu-nav__link mobail-menu-nav__link--active"
+                  href=""
+                  >Студия</a
+                >
+              </li>
+              <li class="mobail-menu-nav__item">
+                <a class="mobail-menu-nav__link" href="./portfolio.html">
+                  Портфолио</a
+                >
+              </li>
+              <li class="mobail-menu-nav__item">
+                <a class="mobail-menu-nav__link" href="">Контакты</a>
+              </li>
+            </ul>
+            <div class="mobail-menu__wraper">
+              <ul class="mobail-menu-contact__list list">
+                <li class="mobail-menu-contact__item">
+                  <a
+                    href="tel:+380961111111"
+                    class="
+                      mobail-menu-contact__link mobail-menu-contact__link--blue
+                    "
+                  >
+                    +38 096 111 11 11
+                  </a>
+                </li>
+                <li class="mobail-menu-contact__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="mobail-menu-contact__link"
+                  >
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+              <ul class="mobail-menu-social__list list">
+                <li class="link mobail-menu-social__item">
+                  <a href="" class="mobail-menu-social__link">Instagram</a>
+                </li>
+                <li class="link mobail-menu-social__item">
+                  <a href="" class="mobail-menu-social__link">Twitter</a>
+                </li>
+                <li class="link mobail-menu-social__item">
+                  <a href="" class="mobail-menu-social__link">Facebook</a>
+                </li>
+                <li class="link mobail-menu-social__item">
+                  <a href="" class="mobail-menu-social__link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
     </header>
     <!--унікальний контент-->
     <main>
@@ -611,5 +687,21 @@
     </div>
 
     <script src="./js/modal.js"></script>
+     <script src="./js/mobile-menu.js"></script>
+    <script>
+      (() => {
+        document
+          .querySelector(".js-speaker-form")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`)
+            );
+
+            e.currentTarget.reset();
+          });
+      })();
+    </script>
   </body>
 </html>
