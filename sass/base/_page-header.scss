@@ -13,9 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @media screen and (min-width: 480px) {
-           
-        }
+   
         @media screen and (min-width: 768px) {
            
         }
@@ -23,19 +21,26 @@
              
              padding-top: 24px;
     
-             padding-bottom: 25px;}
-         
-         
-     
-       
-       
-       
-        }
+             padding-bottom: 25px;} }
+      /*&__nav{
+          width: 100%;
+          
+          justify-content: space-between;
+        }*/
 }
-.mobile-menu{
-    &__button{
+.mobail-menu{
+    &__button {
+        
+            display: inline-flex;
+            margin: 0;
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
         @media screen and (min-width: 768px) {
-            display: none;
-    }
+            display: none;}
+             @media screen and (min-width: 480px) { 
+                 margin-left: auto;
+             }
 }
 }
