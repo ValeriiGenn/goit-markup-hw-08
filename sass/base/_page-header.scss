@@ -22,13 +22,9 @@
              padding-top: 24px;
     
              padding-bottom: 25px;} }
-      /*&__nav{
-          width: 100%;
-          
-          justify-content: space-between;
-        }*/
+     
 }
-.mobail-menu{
+.mobile-menu{ 
     &__button {
         
             display: inline-flex;
@@ -37,6 +33,7 @@
             border: none;
             background-color: transparent;
             cursor: pointer;
+            
         @media screen and (min-width: 768px) {
             display: none;}
              @media screen and (min-width: 480px) { 
@@ -44,3 +41,6 @@
              }
 }
 }
+.mobile-menu.is-open{transform: translateX(0);
+ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }

@@ -94,14 +94,6 @@ body {
   }
 }
 
-.page-header {
-  /*&__nav{
-          width: 100%;
-          
-          justify-content: space-between;
-        }*/
-}
-
 .page-header__container {
   width: 100%;
   margin: 0 auto;
@@ -120,7 +112,7 @@ body {
   }
 }
 
-.mobail-menu__button {
+.mobile-menu__button {
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -130,15 +122,20 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .mobail-menu__button {
+  .mobile-menu__button {
     display: none;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .mobail-menu__button {
+  .mobile-menu__button {
     margin-left: auto;
   }
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo {
@@ -223,144 +220,161 @@ body {
   height: 4px;
   border-radius: 2px;
   background-color: currentColor;
-  bottom: -32px;
+  bottom: -43px;
 }
 
-.mobail-menu {
-  position: absolute;
+.mobile-menu {
+  /*  position: absolute;*/
+  position: fixed;
   top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 100;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--white-color);
 }
 
 @media screen and (min-width: 768px) {
-  .mobail-menu {
+  .mobile-menu {
     display: none;
   }
 }
 
+.mobile-menu__button {
+  background-color: --white-color;
+  border: none;
+}
+
 @media screen and (min-width: 768px) {
-  .mobail-menu__button {
+  .mobile-menu__button {
     display: none;
     fill: currentColor;
   }
 }
 
-.mobail-menu__container {
+.mobile-menu__container {
   position: relative;
   padding: 48px 40px;
   height: 100vh;
 }
 
-.mobail-menu__button--close {
+.mobile-menu__button--close {
   position: absolute;
   right: 15px;
   top: 10px;
+  z-index: 99;
+  background-color: var(--white-color);
+  border: none;
 }
 
-.mobail-menu__wraper {
+.mobile-menu__wraper {
   position: absolute;
   bottom: 48px;
   right: 40px;
   left: 40px;
 }
 
-.mobail-menu-nav__link,
-.mobail-menu-contact__link,
-.mobail-menu-social__link {
+.menu-container.is-open {
+  transform: translateX(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-nav__link,
+.mobile-menu-contact__link,
+.mobile-menu-social__link {
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--button-text-color);
 }
 
-.mobail-menu-nav__link {
+.mobile-menu-nav__link {
   font-size: 40px;
   line-height: 1.175;
 }
 
-.mobail-menu-nav__item:not(:last-child) {
+.mobile-menu-nav__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.mobail-menu-nav__link--active {
+.mobile-menu-nav__link--active {
   color: var(--accent-color);
 }
 
-.mobail-menu-contact__list {
+.mobile-menu-contact__list {
   margin-bottom: 30px;
 }
 
 @media screen and (min-height: 523px) {
-  .mobail-menu-contact__list {
+  .mobile-menu-contact__list {
     margin-bottom: 64px;
   }
 }
 
-.mobail-menu-contact__item:not(:last-child) {
+.mobile-menu-contact__item:not(:last-child) {
   margin-bottom: 15px;
 }
 
 @media screen and (min-height: 523px) {
-  .mobail-menu-contact__item:not(:last-child) {
+  .mobile-menu-contact__item:not(:last-child) {
     margin-bottom: 32px;
   }
 }
 
-.mobail-menu-contact__link {
+.mobile-menu-contact__link {
   font-size: 15px;
   line-height: 1.167;
   color: var(--gray-color);
 }
 
 @media screen and (min-width: 380px) {
-  .mobail-menu-contact__link {
+  .mobile-menu-contact__link {
     font-size: 24px;
   }
 }
 
-.mobail-menu-contact__link--blue {
+.mobile-menu-contact__link--blue {
   color: var(--accent-color);
   font-size: 24px;
   line-height: 1.176;
 }
 
 @media screen and (min-width: 380px) {
-  .mobail-menu-contact__link--blue {
+  .mobile-menu-contact__link--blue {
     font-size: 34px;
   }
 }
 
-.mobail-menu-social__list {
+.mobile-menu-social__list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.mobail-menu-social__link {
+.mobile-menu-social__link {
   font-size: 18px;
   line-height: 1.2;
   color: var(--accent-color);
 }
 
-.mobail-menu-social__item {
+.mobile-menu-social__item {
   margin-top: 10px;
 }
 
-.mobail-menu-social__item:not(:last-child) {
+.mobile-menu-social__item:not(:last-child) {
   margin-right: 10px;
   padding-right: 10px;
   border-right: 1px solid var(--brdrinput-color);
 }
 
-.mobail-menu-nav__link:hover, .mobail-menu-nav__link:focus,
-.mobail-menu-social__link:hover,
-.mobail-menu-social__link:focus,
-.mobail-menu-contact__link:hover,
-.mobail-menu-contact__link:focus,
-.mobail-menu__button:hover,
-.mobail-menu__button:focus {
+.mobile-menu-nav__link:hover, .mobile-menu-nav__link:focus,
+.mobile-menu-social__link:hover,
+.mobile-menu-social__link:focus,
+.mobile-menu-contact__link:hover,
+.mobile-menu-contact__link:focus,
+.mobile-menu__button:hover,
+.mobile-menu__button:focus {
   color: var(--accent-color);
   fill: currentColor;
 }
@@ -1010,14 +1024,13 @@ body {
 .portfolio-list {
   list-style: none;
   margin-bottom: -30px;
-  /*align-items: center;*/
   flex-wrap: wrap;
-  /*display: flex;
-    flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
-    justify-content: center;
-    align-items: center;*/
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    flex-grow: 1;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1032,11 +1045,6 @@ body {
   list-style: none;
   width: 100%;
   margin-bottom: 30px;
-  /*flex-basis: calc((100% -60px) / 3 - 30px);
-        margin-left: 30px;
-        margin-top: 30px;
-        display: list-item;
-        text-align: -webkit-match-parent;*/
 }
 
 @media screen and (min-width: 768px) {
@@ -1063,8 +1071,7 @@ body {
 
 .portfolio-list__item-signature {
   color: var(--button-text-color);
-  /*font-weight: bold;*/
-  font-size: 18px;
+  font-size: 16px;
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
@@ -1168,7 +1175,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-footer__wraper-tablet {
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     margin-bottom: 60px;
   }
 }
@@ -1310,6 +1317,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .footer-social-networks {
+    margin-left: auto;
     margin-bottom: 0;
     padding-top: 5px;
   }

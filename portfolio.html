@@ -24,13 +24,31 @@
 
   <body>
     <!--шапка-->
-    <!-- <header class="page-header">
-      <div class="page-header__container">
+    <header class="page-header">
+      <div class="page-header__container container">
         <a class="logo link" href="./index.html"
           ><p class="logo__text">
             <span class="logo__first">Web</span>Studio
           </p></a
         >
+        <button
+          type="button"
+          class="mobile-menu__button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="nav__icon-open"
+              href="./images/symbol-defs.svg#icon-menu_40pxopt"
+            ></use>
+          </svg>
+        </button>
+
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
@@ -65,7 +83,7 @@
           </li>
         </ul>
       </div>
-    </header>-->
+    </header>
     <!--унікальний контент-->
     <main>
       <!--</section>-->
@@ -104,11 +122,35 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__item-card">
                 <div class="portfolio-list__item-card-thumb">
-                  <img
-                    src="./images/img.P1.jpg"
-                    alt="фото вебсайту"
-                    width="100%"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/compr1200/p11x-min.jpg 1x,
+                        ./images/compr1200/p12x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/compr768/p11xt-min.jpg 1x,
+                        ./images/compr768/p12xt-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/compr480/p01x-min.jpg 1x,
+                        ./images/compr480/p02x-min.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/img.P1.jpg"
+                      alt="постер New Orlean vs Golden Star"
+                      width="100%"
+                    />
+                  </picture>
+
                   <div class="portfolio-list__item-content-hidden">
                     <p class="portfolio-list__item-text-hidden">
                       Технокряк это современная площадка распространения
@@ -127,11 +169,35 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__item-card">
                 <div class="portfolio-list__item-card-thumb">
-                  <img
-                    src="./images/img.P2.jpg"
-                    alt="фото баскетболістів"
-                    width="100%"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/compr1200/p21x-min.jpg 1x,
+                        ./images/compr1200/p22x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/compr768/p21xt-min.jpg 1x,
+                        ./images/compr768/p22xt-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/compr480/p11x-min.jpg 1x,
+                        ./images/compr480/p12x-min.jpg 1x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/img.P2.jpg"
+                      alt="фото баскетболістів"
+                      width="100%"
+                    />
+                  </picture>
+
                   <div class="portfolio-list__item-content-hidden">
                     <p class="portfolio-list__item-text-hidden">
                       Технокряк это современная площадка распространения
@@ -152,11 +218,34 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__item-card">
                 <div class="portfolio-list__item-card-thumb">
-                  <img
-                    src="./images/img.P3.jpg"
-                    alt="рибний ресторан"
-                    width="100%"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/compr1200/p31x-min.jpg 1x,
+                        ./images/compr1200/p32x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/compr768/p31xt-min.jpg 1x,
+                        ./images/compr768/p32xt-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/compr480/p21x-min.jpg 1x,
+                        ./images/compr480/p22x-min.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/img.P3.jpg"
+                      alt="рибний ресторан"
+                      width="100%"
+                    />
+                  </picture>
                   <div class="portfolio-list__item-content-hidden">
                     <p class="portfolio-list__item-text-hidden">
                       Технокряк это современная площадка распространения
@@ -177,11 +266,35 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__item-card">
                 <div class="portfolio-list__item-card-thumb">
-                  <img
-                    src="./images/img.P4.jpg"
-                    alt="фото навушників"
-                    width="100%"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/compr1200/p41x-min.jpg 1x,
+                        ./images/compr1200/p42x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/compr768/p41xt-min.jpg 1x,
+                        ./images/compr768/p42xt-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/compr480/p31x-min.jpg 1x,
+                        ./images/compr480/p32x-min.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/img.P4.jpg"
+                      alt="фото навушників"
+                      width="100%"
+                    />
+                  </picture>
+
                   <div class="portfolio-list__item-content-hidden">
                     <p class="portfolio-list__item-text-hidden">
                       Технокряк это современная площадка распространения
@@ -200,11 +313,35 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__item-card">
                 <div class="portfolio-list__item-card-thumb">
-                  <img
-                    src="./images/img.P5.jpg"
-                    alt="дві коробочки"
-                    width="100%"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/compr1200/p51x-min.jpg 1x,
+                        ./images/compr1200/p52x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/compr768/p51xt-min.jpg 1x,
+                        ./images/compr768/p52xt-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/compr480/p41x-min.jpg 1x,
+                        ./images/compr480/p42x-min.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/img.P5.jpg"
+                      alt="дві коробочки"
+                      width="100%"
+                    />
+                  </picture>
+
                   <div class="portfolio-list__item-content-hidden">
                     <p class="portfolio-list__item-text-hidden">
                       Технокряк это современная площадка распространения
@@ -223,11 +360,35 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__item-card">
                 <div class="portfolio-list__item-card-thumb">
-                  <img
-                    src="./images/img.P6.jpg"
-                    alt="фото монітора"
-                    width="100%"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/compr1200/p61x-min.jpg 1x,
+                        ./images/compr1200/p62x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/compr768/p61xt-min.jpg 1x,
+                        ./images/compr768/p62xt-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/compr480/p51x-min.jpg 1x,
+                        ./images/compr480/p52x-min.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/img.P6.jpg"
+                      alt="фото монітора"
+                      width="100%"
+                    />
+                  </picture>
+
                   <div class="portfolio-list__item-content-hidden">
                     <p class="portfolio-list__item-text-hidden">
                       Технокряк это современная площадка распространения
@@ -248,11 +409,35 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__item-card">
                 <div class="portfolio-list__item-card-thumb">
-                  <img
-                    src="./images/img.P7.jpg"
-                    alt="фото глянцю"
-                    width="100%"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/compr1200/p71x-min.jpg 1x,
+                        ./images/compr1200/p72x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/compr768/p71xt-min.jpg 1x,
+                        ./images/compr768/p72xt-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/compr480/p61x-min.jpg 1x,
+                        ./images/compr480/p62x-min.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/img.P7.jpg"
+                      alt="фото глянцю"
+                      width="100%"
+                    />
+                  </picture>
+
                   <div class="portfolio-list__item-content-hidden">
                     <p class="portfolio-list__item-text-hidden">
                       Технокряк это современная площадка распространения
@@ -273,7 +458,31 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__item-card">
                 <div class="portfolio-list__item-card-thumb">
-                  <img src="./images/img.P8.jpg" alt="бирка" width="100%" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/compr1200/p81x-min.jpg 1x,
+                        ./images/compr1200/p82x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/compr768/p81xt-min.jpg 1x,
+                        ./images/compr768/p82xt-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/compr480/p71x-min.jpg 1x,
+                        ./images/compr480/p72x-min.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/img.P8.jpg" alt="бирка" width="100%" />
+                  </picture>
+
                   <div class="portfolio-list__item-content-hidden">
                     <p class="portfolio-list__item-text-hidden">
                       Технокряк это современная площадка распространения
@@ -292,11 +501,35 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__item-card">
                 <div class="portfolio-list__item-card-thumb">
-                  <img
-                    src="./images/img.P9.jpg"
-                    alt="фото нетбука"
-                    width="100%"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/compr1200/p91x-min.jpg 1x,
+                        ./images/compr1200/p92x-min.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/compr768/p91xt-min.jpg 1x,
+                        ./images/compr768/p92xt-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/compr480/p81x-min.jpg 1x,
+                        ./images/compr480/p82x-min.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/img.P9.jpg"
+                      alt="фото нетбука"
+                      width="100%"
+                    />
+                  </picture>
+
                   <div class="portfolio-list__item-content-hidden">
                     <p class="portfolio-list__item-text-hidden">
                       Технокряк это современная площадка распространения
@@ -404,5 +637,84 @@
         </div>
       </div>
     </footer>
+    <!--мобільне меню-->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button
+        class="mobile-menu__button--close js-close-menu"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use
+            class="nav__icon-close"
+            href="./images/symbol-defs.svg#icon-close_40pxopt"
+          ></use>
+        </svg>
+      </button>
+      <div class="mobile-menu__container">
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu-nav__list list">
+            <li class="mobile-menu-nav__item">
+              <a class="mobile-menu-nav__link" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile-menu-nav__item">
+              <a
+                class="mobile-menu-nav__link mobile-menu-nav__link--active"
+                href="./portfolio.html"
+              >
+                Портфолио</a
+              >
+            </li>
+            <li class="mobile-menu-nav__item">
+              <a class="mobile-menu-nav__link" href="">Контакты</a>
+            </li>
+          </ul>
+          <div class="mobile-menu__wraper">
+            <ul class="mobile-menu-contact__list list">
+              <li class="mobile-menu-contact__item">
+                <a
+                  href="tel:+380961111111"
+                  class="
+                    mobile-menu-contact__link mobile-menu-contact__link--blue
+                  "
+                >
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="mobile-menu-contact__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mobile-menu-contact__link"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mobile-menu-social__list list">
+              <li class="link mobile-menu-social__item">
+                <a href="" class="mobile-menu-social__link">Instagram</a>
+              </li>
+              <li class="link mobile-menu-social__item">
+                <a href="" class="mobile-menu-social__link">Twitter</a>
+              </li>
+              <li class="link mobile-menu-social__item">
+                <a href="" class="mobile-menu-social__link">Facebook</a>
+              </li>
+              <li class="link mobile-menu-social__item">
+                <a href="" class="mobile-menu-social__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

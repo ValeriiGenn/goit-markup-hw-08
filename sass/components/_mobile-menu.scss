@@ -1,14 +1,18 @@
-.mobail-menu {
-    position: absolute;
+.mobile-menu {
+  /*  position: absolute;*/
+    position: fixed;
     top: 0;
+    left:0;
     width: 100vw;
     height: 100vh;
-    z-index: 100;
-
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--white-color);
     @media screen and (min-width: 768px) {
         display: none;}
-     &__button {
+     &__button { background-color: (--white-color);
+        border: none;
     @media screen and (min-width: 768px) {
         display: none;
         fill: currentColor;
@@ -23,6 +27,9 @@
         position: absolute;
         right: 15px;
         top: 10px;
+        z-index: 99;
+        background-color: var(--white-color);
+        border: none;
     }
 
     &__wraper {
@@ -32,10 +39,13 @@
         left: 40px;
     }
 }
-
-.mobail-menu-nav,
-.mobail-menu-contact,
-.mobail-menu-social {
+.menu-container.is-open{
+    transform: translateX(0);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu-nav,
+.mobile-menu-contact,
+.mobile-menu-social {
     &__link {
         text-decoration: none;
         font-weight: 500;
@@ -44,7 +54,7 @@
     }
 }
 
-.mobail-menu-nav {
+.mobile-menu-nav {
     &__link {
         font-size: 40px;
         line-height: 1.175;
@@ -59,7 +69,7 @@
     }
 }
 
-.mobail-menu-contact {
+.mobile-menu-contact {
     &__list {
         margin-bottom: 30px;
 
@@ -97,7 +107,7 @@
     }
 }
 
-.mobail-menu-social {
+.mobile-menu-social {
     &__list {
         display: flex;
         flex-wrap: wrap;
@@ -106,12 +116,10 @@
     &__link {
         font-size: 18px;
         line-height: 1.2;
-        color: var(--accent-color);
-    }
+        color: var(--accent-color); }
 
     &__item {
-        margin-top: 10px;
-    }
+        margin-top: 10px;}
 
     &__item:not(:last-child) {
         margin-right: 10px;
@@ -120,10 +128,10 @@
     }
 }
 
-.mobail-menu-nav__link,
-.mobail-menu-social__link,
-.mobail-menu-contact__link,
-.mobail-menu__button {
+.mobile-menu-nav__link,
+.mobile-menu-social__link,
+.mobile-menu-contact__link,
+.mobile-menu__button {
 
     &:hover,
     &:focus {
