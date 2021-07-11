@@ -942,9 +942,6 @@ body {
   fill: currentColor;
 }
 
-/*.container {
-    padding-bottom: 40px;
-}*/
 .filter-list {
   list-style: none;
   display: flex;
@@ -995,8 +992,7 @@ body {
 }
 
 .portfolio {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 60px 15px;
   margin-left: auto;
   margin-right: auto;
 }
