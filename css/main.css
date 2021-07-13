@@ -1004,6 +1004,12 @@ body {
   }
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .portfolio-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .portfolio-list {
   list-style: none;
   flex-wrap: wrap;
@@ -1027,10 +1033,6 @@ body {
 .portfolio-list__item {
   list-style: none;
   width: 100%;
-}
-
-.portfolio-list__item:not(:last-child) {
-  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
