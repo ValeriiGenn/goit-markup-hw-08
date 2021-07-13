@@ -757,6 +757,7 @@ body {
 
 .team__item {
   width: 100%;
+  height: auto;
   background-color: var(--white-color);
   box-shadow: 10px 10px 10px 10px var(--gray-color);
 }
@@ -933,9 +934,6 @@ body {
   margin-bottom: 30px;
   margin-top: -15px;
   margin-left: -8px;
-  /*justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;*/
 }
 
 @media screen and (min-width: 768px) {
@@ -946,8 +944,6 @@ body {
 }
 
 .filter-list__btn {
-  /*&:not(:last-child) 
-    margin-right: 8px;}*/
   margin-left: 8px;
   margin-top: 15px;
 }
